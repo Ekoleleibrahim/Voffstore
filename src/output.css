@@ -591,6 +591,10 @@ img {
   background: linear-gradient(rgb(254, 215, 170), white);
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .fixed {
   position: fixed;
 }
@@ -926,6 +930,16 @@ img {
 
 .-translate-x-\[1000px\] {
   --tw-translate-x: -1000px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[5000px\] {
+  --tw-translate-x: -5000px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[8000px\] {
+  --tw-translate-x: -8000px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1376,6 +1390,10 @@ img {
   opacity: 0.7;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -1442,6 +1460,10 @@ img {
 
 .duration-\[\.4s\] {
   transition-duration: .4s;
+}
+
+.duration-\[\.3s\] {
+  transition-duration: .3s;
 }
 
 .\*\:font-semibold > * {
@@ -1811,6 +1833,10 @@ img {
 
   .lg\:h-full {
     height: 100%;
+  }
+
+  .lg\:h-\[720px\] {
+    height: 720px;
   }
 
   .lg\:max-w-\[500px\] {
