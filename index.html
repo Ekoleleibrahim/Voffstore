@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V off.vstore</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+    <!-- HEADER SITE -->
+    <div class="bg-white sticky top-0 z-[1000] supports-[position:sticky]:sticky">
+        <header class="py-4 pl-6 pr-4">
+            <nav class="flex items-center justify-between group">
+                <div>
+                    <input type="checkbox" id="burger" class="hidden">
+                    <label for="burger" class="block relative -top-6 group-has-[:checked]:-left-5 group-has-[:checked]:rounded-md z-[700] border border-slate-200 shadow shadow-slate-100 rounded-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 cursor-pointer group-has-[:checked]:hidden">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                        </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 cursor-pointer group-has-[:checked]:block hidden">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>                                 
+                    </label>
+                    <ul class="flex flex-col justify-around gap-4 p-3 pl-8 fixed top-0 left-0 bottom-0 w-[400px] bg-white z-[500] -translate-x-[500px] transition-Transform duration-[.4s] group-has-[:checked]:translate-x-0 overflow-y-auto">  
+                        <div class="flex flex-col gap-3 pt-6">
+                            <div>
+                                <a href="#" class="text-2xl flex items-center justify-between mb-2 font-semibold">
+                                    <span class="inline-block">Popular Categories</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                      </svg> 
+                                </a>
+                                <ul class="flex flex-col gap-2 *:font-semibold">
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <div><img src="icons/woman-clothes.png" alt="women clotes" class="h-5"></div>
+                                            <span>Women Clothes</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <div><img src="icons/wrist-watch.png" alt="watches" class="h-5"></div>
+                                            <span>Watches</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <div><img src="icons/man.png" alt="man" class="h-5"></div>
+                                            <span>Men Clothes</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <div><img src="icons/office-supplies.png" alt="office supplies" class="h-5"></div>
+                                            <span>Education & Office supplies</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <div><img src="icons/sport.png" alt="sport" class="h-5"></div>
+                                            <span>Sports & Outdoor</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <div><img src="icons/home-appliance.png" alt="home appliances" class="h-5"></div>
+                                            <span>Home appliances</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <div><img src="icons/pearl-necklace.png" alt="pearl" class="h-5"></div>
+                                            <span>Jewelry & Accessoiries</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <div><img src="icons/steering-wheel.png" alt="automotive" class="h-5"></div>
+                                            <span>Automotive & Motorcycle</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="#" class="text-2xl flex items-center justify-between my-2 font-semibold">
+                                    <span class="inline-block">Shopping inspirations</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                      </svg> 
+                                </a>
+                                <ul class="flex flex-col gap-2 *:font-semibold">
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <div><img src="icons/surfboard.png" alt="surfboard" class="h-5"></div>
+                                            <span>Summer OOTD ideas</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <div><img src="icons/network.png" alt="home gadget" class="h-5"></div>
+                                            <span>Cool home gadgets</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <!-- <div><img width="100" height="100" src="https://img.icons8.com/bubbles/100/electric-shaver--v1.png" alt="electric-shaver--v1" class="h-8"></div> -->
+                                            <span>Beauty hacks</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="#" class="text-2xl flex justify-between items-center my-2 font-semibold">
+                                    <span class="inline-block">Setting</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                      </svg> 
+                                </a>
+                                <ul class="flex flex-col gap-2 *:font-semibold">
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                              </svg> 
+                                           <span> Ship top</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                              </svg> 
+                                            <span>Currency</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+                                              </svg>       
+                                            <span>Language</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex items-center gap-1 bg-slate-100 p-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                                              </svg>
+                                            <span>Help Center</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex justify-end">
+                            <a href="src/Pages/connexion.html" target="_blank" class="inline-flex justify-center gap-1 py-2.5 px-3 bg-black rounded-md hover:bg-black/95 text-white transition-BackgroundColor duration-[.4s]">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                </svg>                                  
+                            </a>
+                        </div>
+                    </ul> 
+                </div>
+                <div class="self-center">
+                    <a href="index.html" class="font-bold block text-center text-4xl first-letter:text-6xl first-letter:mr-2">Voff.vstore</a>
+                </div>
+                <div class="hidden md:flex md:items-center md:gap-4 bg-white">
+                    <a href="#">About</a>
+                    <a href="#" class="underline">FAQs</a>
+                    <a href="#" class="w-[50px] h-[50px] rounded-full p-4 inline-flex flex-center items-center border border-gray-400 hover:bg-gray-100 transition-BackgroundColor duration-[.4s] shadow shadow-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                          </svg>                  
+                    </a>
+                    <a href="src/Pages/connexion.html" target="_blank" class="flex gap-1 p-3 border hover:bg-gray-100 border-gray-400 rounded-full  transition-BackgroundColor duration-[.4s] shadow shadow-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                        </svg>                                  
+                    </a>
+                </div>
+            </nav>
+        </header>
+         <!-- Formulaire recherche des produits -->
+        <div class="p-4 flex max-lg:flex-col  lg:items-center gap-5">
+            <div class="shrink-0 flex-grow-[4]">
+                <form class="flex max-md:flex-col gap-3">
+                    <label for="categ" class="relative block w-full max-md:hidden">
+                        <input type="text" id="categ" class="w-full py-3 px-4 rounded-full bg-clouds/80 focus:bg-white placeholder:text-gray-800 focus:outline-none focus:border focus:border-gray-300" placeholder="Categories">
+                        <div class="p-1 bg-white rounded-full absolute top-2 right-2 flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </label>
+                    <label for="prod" class="relative block w-full max-md:hidden">
+                        <input type="text" id="prod" class="w-full py-3 px-4 rounded-full bg-clouds/80 focus:bg-white placeholder:text-gray-800 focus:outline-none focus:border focus:border-gray-300" placeholder="New Product">
+                        <div class="p-1 bg-white rounded-full absolute top-2 right-2 flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd" />
+                              </svg>                      
+                        </div>
+                    </label>
+                    <label for="saerch" class="relative block w-full">
+                        <input type="text" id="search" class="w-full py-3 px-4 rounded-full bg-clouds/80 focus:bg-white placeholder:text-gray-800 focus:outline-none focus:border focus:border-gray-300" placeholder="Search...">
+                        <div class="p-1 bg-white rounded-full absolute top-2 right-2 flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                              </svg>                                              
+                        </div>
+                    </label>
+                </form>
+            </div>
+            <div class="shrink-0 flex-grow">
+                <ul class="flex gap-2 justify-evenly max-md:justify-start max-md:flex-wrap lg:overflow-x-auto lg:max-w-[500px]">
+                    <li>
+                        <a href="#" class="block border border-gray-400 py-2 px-6 rounded-full hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Men</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block border border-gray-400 py-2 px-6 rounded-full hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Women</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block border border-gray-400 py-2 px-6 rounded-full hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Children</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block border border-gray-400 py-2 px-6 rounded-full hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Brand</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block border border-gray-400 py-2 px-6 rounded-full hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Electronics</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block border border-gray-400 py-2 px-6 rounded-full hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Bags</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block border border-gray-400 py-2 px-6 rounded-full hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Sports</a>
+                    </li>
+                </ul>
+            </div>   
+        </div>
+    </div>
+
+    <!-- Menu mobile first -->
+    <div class="fixed bottom-0 w-full z-[2000] lg:hidden">
+        <ul class="flex items-center bg-white">
+            <li class="w-1/5">
+                <a href="#" class="group/home flex flex-col items-center w-full px-5 py-4  hover:bg-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 scale-90 group-hover/home:scale-100">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                    <div>Home</div>                      
+                </a>
+            </li>
+            <li class="w-1/5">
+                <a href="#" class="group/tips flex flex-col items-center w-full px-5 py-4 hover:bg-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 scale-90 group-hover/tips:scale-100">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                    <div>
+                        Tips
+                    </div>
+                </a>
+            </li>
+            <li class="w-1/5">
+                <a href="#"  class="group/messenger flex flex-col items-center w-full px-5 py-4  hover:bg-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 scale-90 group-hover/messenger:scale-100">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                      </svg> 
+                      <div>
+                        Messenger
+                      </div>                     
+                </a>
+            </li>
+            <li class="w-1/5">
+                <a href="#" class="group/cart flex flex-col items-center w-full px-5 py-4 hover:bg-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 scale-90 group-hover/cart:scale-100">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    <div>
+                        Cart
+                    </div>
+                </a>
+            </li>
+            <li class="w-1/5">
+                <a href="#" class="group/compte flex flex-col items-center px-5 pt-1.5 pb-0.5 hover:bg-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 scale-90 group-hover/compte:scale-100">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                      </svg>                      
+                    <div class="text-center">
+                        My compte
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Section Principal -->
+    <section class="py-8 px-12 max-md:px-5 h-auto w-full bg-fond2 bg-cover bg-center bg-no-repeat relative rounded-2xl animate-load">
+        <div>
+            <h1 class="text-8xl text-white max-md:text-center">
+                <span class="block">We are digital</span>
+                <span class="block"> meets fashions</span>
+            </h1>
+            <a href="#" class="mt-5 p-4 rounded-2xl inline-flex items-center gap-3 text-2xl text-white bg-black/20 hover:bg-black/70 shadow shadow-black/80">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
+                </svg>                  
+                Show your vstore pride, get high-quality <br> swag directly from the vstore foundation
+            </a>
+        </div>
+        <div class="flex max-md:justify-center justify-end  text-white text-2xl my-4">
+            <p>Transforming into stylish <br> & functional pieces</p>
+        </div>
+        <div class="text-center">
+            <div class="flex items-center justify-center">
+                <a href="#" class="btn btn-white-black focus:ring-2 focus:ring-black shadow">Start shoping</a>
+                <a href="#" class="btn btn-white-black py-3 px-3 focus:ring-2 focus:ring-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"> 
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </a>
+            </div>
+                <a href="#" class="mt-4 text-white inline-block text-xl">Top collections</a>
+            </div>
+            <div class="absolute top-4 right-5 flex items-center gap-1">
+                <button type="button" class="inline-block bg-white rounded-full p-2 text-center opacity-70 hover:opacity-100 shadow-sm shadow-black/25">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>                  
+                </button>
+                <button type="button" class="inline-block bg-white rounded-full p-2 text-center shadow-sm shadow-black/25">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>                  
+                </button>
+            </div>
+    </section>
+
+    <!-- Section ARRIVALS AND NEW SELECTIONS -->
+    <section class="py-[100px] px-5">
+        <header>
+            <div class="md:flex md:justify-between md:items-center">
+                <p class="text-xl text-gray-800">Catalogs</p>
+                <div class="flex max-md:justify-end items-center gap-2 max-md:mt-2">
+                    <button type="button" class="inline-block border border-gray-300 rounded-full p-3 text-center hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                          </svg>                  
+                    </button>
+                    <button type="button" class="inline-block border border-gray-300 rounded-full p-3 text-center hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                          </svg>                  
+                    </button>
+                    <a href="#" class="text-xl py-3 px-5 border border-gray-300 rounded-full hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">View all</a>
+                </div>
+            </div>
+            <h1 class="text-center my-5 text-4xl font-bold">Fresh arrivals and new selections</h1>
+        </header>
+
+        <div class="grid max-lg:grid-cols-1 grid-cols-[3fr_2fr_2fr] gap-3 mt-14">
+            <article class="relative">
+                <div class="absolute top-2 right-2 flex items-center">
+                    <button type="button" class="px-6 py-2 rounded-full bg-white font-bold">Add collections</button>
+                    <button type="button" class="p-2 rounded-full bg-white font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                          </svg>                              
+                    </button>
+                </div>
+                <img src="images/women-fashion.jpg" alt="women" class="rounded-xl max-lg:h-[400px]">
+                <p class="absolute bottom-3 left-4 bg-white py-3 px-4 rounded-full">Women</p>
+            </article>
+            <article class="relative">
+                <div class="absolute top-2 right-2 flex items-center">
+                    <button type="button" class="px-6 py-2 rounded-full bg-white font-bold">Add collections</button>
+                    <button type="button" class="p-2 rounded-full bg-white font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                          </svg>                              
+                    </button>
+                </div>
+                <img src="images/fashion-men.jpg" alt="men" class="h-full rounded-xl max-lg:h-[400px]">
+                <p class="absolute bottom-3 left-4 bg-white py-3 px-4 rounded-full">Men</p>
+            </article>
+            <article class="relative">
+                <div class="absolute top-2 right-2 flex items-center">
+                    <button type="button" class="px-6 py-2 rounded-full bg-white font-bold">Add collections</button>
+                    <button type="button" class="p-2 rounded-full bg-white font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                          </svg>                              
+                    </button>
+                </div>
+                <img src="images/kids-fashion.webp" alt="children" class="rounded-xl max-lg:h-[400px]">
+                <p class="absolute bottom-3 left-4 bg-white py-3 px-4 rounded-full">children</p>
+            </article>
+            <article class="relative lg:col-span-2">
+                <div class="absolute top-2 right-2 flex items-center">
+                    <button type="button" class="px-6 py-2 rounded-full bg-white font-bold">Add collections</button>
+                    <button type="button" class="p-2 rounded-full bg-white font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                          </svg>                              
+                    </button>
+                </div>
+                <img src="images/accessoires-auto.jpg" alt="accessoires-auto" class="rounded-xl max-lg:h-[400px]">
+                <p class="absolute bottom-3 lg:bottom-10 left-4 bg-white py-3 px-4 rounded-full">accessoires auto</p>
+            </article>
+            <article class="relative lg:row-span-2">
+                <div class="absolute top-2 right-2 flex items-center">
+                    <button type="button" class="px-6 py-2 rounded-full bg-white font-bold">Add collections</button>
+                    <button type="button" class="p-2 rounded-full bg-white font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                          </svg>                              
+                    </button>
+                </div>
+                <img src="images/mouse-others.jpg" alt="mouse" class="rounded-xl lg:h-full max-lg:h-[400px]">
+                <p class="absolute bottom-3 left-4 bg-white py-3 px-4 rounded-full">Mouse & Others</p>
+            </article>
+            <article class="relative">
+                <div class="absolute top-2 right-2 flex items-center">
+                    <button type="button" class="px-6 py-2 rounded-full bg-white font-bold">Add collections</button>
+                    <button type="button" class="p-2 rounded-full bg-white font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                          </svg>                              
+                    </button>
+                </div>
+                <img src="images/pc.webp" alt="pc" class="lg:h-full rounded-xl max-lg:h-[400px]">
+                <p class="absolute bottom-3 left-4 bg-white py-3 px-4 rounded-full">PC</p>
+            </article>
+            <article class="relative">
+                <div class="absolute top-2 right-2 flex items-center">
+                    <button type="button" class="px-6 py-2 rounded-full bg-white font-bold">Add collections</button>
+                    <button type="button" class="p-2 rounded-full bg-white font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                          </svg>                              
+                    </button>
+                </div>
+                <img src="images/game.jpg" alt="manette" class="rounded-xl h-full max-lg:h-[400px]">
+                <p class="absolute bottom-3 left-4 bg-white py-3 px-4 rounded-full">Manettes PSP & Others</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Section FASHION AND OFFERS -->
+    <section class="py-[100px] px-4">
+        <header class="text-center mb-14">
+            <h1 class="text-center text-4xl font-bold">Fashion and offers for every body</h1>
+        </header>
+        <div class="grid grid-cols-1 md:grid-cols-2 md:justify-center px-4">
+            <article class="relative">
+                <div>
+                    <img src="images/Jacket-Orange.jpg" alt="chemise" class="md:rounded-tl-2xl md:rounded-bl-2xl h-[720px]">
+                </div>
+                <div class="bg-black/5 absolute top-0 bottom-0 left-0 right-0 z-50 md:rounded-tl-2xl md:rounded-bl-2xl"></div>
+                <div class="flex items-center gap-2 absolute bottom-2 right-2 z-[100]">
+                    <button type="button" class="inline-block bg-white/80 rounded-full p-2 text-center hover:bg-white transition-BackgroundColor duration-[.4s]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                          </svg>                  
+                    </button>
+                    <button type="button" class="inline-block bg-white rounded-full p-2 text-center transition-BackgroundColor duration-[.4s]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                          </svg>                  
+                    </button>
+                </div>
+            </article>
+            <article class="h-full flex justify-center items-center linear-grad md:rounded-tr-2xl md:rounded-br-2xl p-8 max-md:py-8 max-md:px-4">
+                <div class="min-w-full w-[450px] bg-white py-14 px-8 max-lg:px-5  flex flex-col items-center rounded-2xl">
+                    <p class="border border-black py-1 px-6 mb-3 rounded-full inline-block">offers</p>
+                    <h3 class="text-3xl text-center mb-2">Exclusive fashion offers await</h3>
+                    <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nobis qui nisi odio explicabo vero, cum illo dolorum esse sint.</p>
+                    <div class="flex items-center mt-4">
+                        <a href="#" class="btn btn-black-white">Try now</a>
+                        <a href="#" class="btn btn-white-black py-3 px-3 border border-black">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"> 
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                              </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Section NEW ARRIVALS-->
+    <section class="py-[50px] px-4">
+        <header>
+            <div class="md:flex md:justify-between md:items-center">
+                <p class="text-xl text-gray-800">Catalogs</p>
+                <div class="flex max-md:justify-end items-center gap-2 max-md:mt-2">
+                    <button type="button" class="inline-block border border-gray-300 rounded-full p-3 text-center hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                          </svg>                  
+                    </button>
+                    <button type="button" class="inline-block border border-gray-300 rounded-full p-3 text-center hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                          </svg>                  
+                    </button>
+                    <a href="#" class="text-xl py-3 px-5 border border-gray-300 rounded-full hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">View all</a>
+                </div>
+            </div>
+        </header>
+        <div class="mt-5">
+            <div class="flex items-center gap-3 overflow-hidden">
+                <div class="flex-grow relative w-full">
+                    <a href="#" class="block">
+                        <div class="flex">
+                            <div><img src="images/veste-homme.jpg" alt="veste" class="rounded-tl-lg rounded-bl-lg h-[500px]"></div>
+                            <div><img src="images/jacket-chocolat.webp" alt="jacket" class=" rounded-tr-lg rounded-br-lg h-[500px]"></div>
+                        </div>
+                        <div class="flex flex-col gap-2 absolute bottom-3 left-2">
+                            <div>
+                                <p class="py-2 px-6 bg-white rounded-full inline-block">Men</p>
+                            </div>
+                            <div class="flex items-center justify-between gap-6 bg-white p-3 rounded-md shadow-sm shadow-black/20">
+                                <div>
+                                    <img src="images/veste-homme.jpg" alt="veste" class="h-12 w-12 rounded-lg">
+                                </div>
+                                <div class="font-semibold">
+                                    <div>
+                                        <p>Relaxed fit veste</p>
+                                    </div>
+                                    <div>
+                                        <span>$80.50</span>
+                                        <span class="text-slate-700 ml-3">$100.50</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg> 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-grow relative w-full">
+                    <a href="#" class="block">
+                        <div>
+                            <img src="images/veste-homme.jpg" alt="veste" class="rounded-tl-lg rounded-bl-lg h-[500px]">
+                        </div>
+                        <div class="flex flex-col gap-2 absolute bottom-3 left-2">
+                            <div>
+                                <p class="py-2 px-6 bg-white rounded-full inline-block">Men</p>
+                            </div>
+                            <div class="flex items-center justify-between gap-6 bg-white p-3 rounded-md shadow-sm shadow-black/20">
+                                <div>
+                                    <img src="images/veste-homme.jpg" alt="veste" class="h-12 w-12 rounded-lg">
+                                </div>
+                                <div class="font-semibold">
+                                    <div>
+                                        <p>Relaxed fit veste</p>
+                                    </div>
+                                    <div>
+                                        <span>$80.50</span>
+                                        <span class="text-slate-700 ml-3">$100.50</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg> 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-grow relative w-full">
+                    <a href="#" class="block">
+                        <div>
+                            <img src="images/veste-homme.jpg" alt="veste" class="rounded-tl-lg rounded-bl-lg h-[500px]">
+                        </div>
+                        <div class="flex flex-col gap-2 absolute bottom-3 left-2">
+                            <div>
+                                <p class="py-2 px-6 bg-white rounded-full inline-block">Men</p>
+                            </div>
+                            <div class="flex items-center justify-between gap-6 bg-white p-3 rounded-md shadow-sm shadow-black/20">
+                                <div>
+                                    <img src="images/veste-homme.jpg" alt="veste" class="h-12 w-12 rounded-lg">
+                                </div>
+                                <div class="font-semibold">
+                                    <div>
+                                        <p>Relaxed fit veste</p>
+                                    </div>
+                                    <div>
+                                        <span>$80.50</span>
+                                        <span class="text-slate-700 ml-3">$100.50</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg> 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-grow relative w-full">
+                    <a href="#" class="block">
+                        <div class="flex">
+                            <img src="images/veste-homme.jpg" alt="veste" class="rounded-tl-lg rounded-bl-lg h-[500px]">
+                        </div>
+                        <div class="flex flex-col gap-2 absolute bottom-3 left-2">
+                            <div>
+                                <p class="py-2 px-6 bg-white rounded-full inline-block">Men</p>
+                            </div>
+                            <div class="flex items-center justify-between gap-6 bg-white p-3 rounded-md shadow-sm shadow-black/20">
+                                <div>
+                                    <img src="images/veste-homme.jpg" alt="veste" class="h-12 w-12 rounded-lg">
+                                </div>
+                                <div class="font-semibold">
+                                    <div>
+                                        <p>Relaxed fit veste</p>
+                                    </div>
+                                    <div>
+                                        <span>$80.50</span>
+                                        <span class="text-slate-700 ml-3">$100.50</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg> 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-grow relative w-full">
+                    <a href="#" class="block">
+                        <div class="flex">
+                            <img src="images/veste-homme.jpg" alt="veste" class="rounded-tl-lg rounded-bl-lg h-[500px]">
+                        </div>
+                        <div class="flex flex-col gap-2 absolute bottom-3 left-2">
+                            <div>
+                                <p class="py-2 px-6 bg-white rounded-full inline-block">Men</p>
+                            </div>
+                            <div class="flex items-center justify-between gap-6 bg-white p-3 rounded-md shadow-sm shadow-black/20">
+                                <div>
+                                    <img src="images/veste-homme.jpg" alt="veste" class="h-12 w-12 rounded-lg">
+                                </div>
+                                <div class="font-semibold">
+                                    <div>
+                                        <p>Relaxed fit veste</p>
+                                    </div>
+                                    <div>
+                                        <span>$80.50</span>
+                                        <span class="text-slate-700 ml-3">$100.50</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg> 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!-- Newsletters -->
+    <section class="py-[100px] px-4 max-md:py-[50px]">
+        <h2 class="text-4xl text-center mb-6 font-bold">Stay in touch</h2>
+        <form action="" class="text-center max-w-[700px] w-auto m-auto">
+            <label for="email" class="block relative">
+                <input type="email" id="email" class="border-2 border-black/50 w-full py-3 px-5 rounded-full focus:outline-none focus:border-black placeholder:text-xl" placeholder="Enter email here">
+                <button type="button" class="absolute right-1 top-1 py-2.5 px-10 bg-black text-white rounded-full border-none outline-none">Join us</button>
+            </label>
+        </form>
+    </section>
+</body>
+</html>

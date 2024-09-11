@@ -1,0 +1,22 @@
+@tailwind base;
+img{
+    @apply w-full object-cover;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn{
+        @apply py-4 px-10 rounded-full inline-block ;
+    }
+    .btn-white-black{
+        @apply bg-white text-black;
+    }
+    .btn-black-white{
+        @apply bg-black text-white hover:bg-black/95;
+    }
+    .linear-grad{
+        background: linear-gradient(rgb(254, 215, 170), white);
+    }
+}
