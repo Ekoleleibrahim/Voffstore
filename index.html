@@ -182,7 +182,7 @@
             </nav>
         </header>
          <!-- Formulaire recherche des produits -->
-        <div class="p-4 flex max-lg:flex-col gap-5">
+        <div class="md:p-4 px-1 py-3 flex max-lg:flex-col gap-5">
             <div class="shrink-0 flex-grow-[4]">
                 <form class="flex max-md:flex-col gap-3">
                     <label for="categ" class="relative block w-full max-md:hidden">
@@ -201,17 +201,40 @@
                               </svg>                      
                         </div>
                     </label>
-                    <label for="search" class="relative block w-full">
-                        <input type="text" id="search" class="w-full py-3 px-4 rounded-full bg-clouds/80 focus:bg-white placeholder:text-gray-800 focus:outline-none focus:border focus:border-gray-300" placeholder="Search...">
+                    <label for="search" class="relative block w-full group">
+                        <input type="text" id="search" class="w-full max-md:border py-3 px-4 rounded-full bg-clouds/80 focus:bg-white placeholder:text-gray-800 focus:outline-none focus:border focus:border-gray-300" placeholder="Search..." autocomplete="off">
                         <div class="p-1 bg-white rounded-full absolute top-2 right-2 flex justify-center items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                               </svg>                                              
                         </div>
+                        <ul class="hidden group-has-[:focus]:max-md:flex  flex-col absolute left-0 top-full bg-white w-full">
+                            <li>
+                                <a href="#" class="block border-b border-gray-300 py-2 px-6 hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Men</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block border-b border-gray-300  py-2 px-6 hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Women</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block border-b border-gray-300  py-2 px-6 hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Children</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block border-b border-gray-300  py-2 px-6 hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Brand</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block border-b border-gray-300  py-2 px-6 hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Electronics</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block border-b border-gray-300  py-2 px-6 hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Bags</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block border-b border-gray-300 py-2 px-6 hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Sports</a>
+                            </li>
+                        </ul>
                     </label>
                 </form>
-            </div>
-            <div class="flex-grow-[2] self-center overflow-auto">
+            </div> 
+            <div class="flex-grow-[2] self-center overflow-auto max-md:hidden">
                 <ul class="flex gap-2 max-md:justify-start flex-wrap">
                     <li>
                         <a href="#" class="block border border-gray-400 py-2 px-6 rounded-full hover:bg-gray-100 transition-BackgroundColor duration-[.4s]">Men</a>
@@ -297,19 +320,19 @@
     <!-- Section Principal -->
     <section class="py-8 px-3 h-auto w-full bg-fond2 bg-cover bg-center bg-no-repeat relative rounded-2xl animate-load lg:mt-5">
         <div>
-            <h1 class="text-6xl text-white">
+            <h1 class="text-6xl text-white max-md:mt-5">
                 <span class="block">We are digital</span>
                 <span class="block"> meets fashions</span>
             </h1>
-            <a href="#" class="mt-5 p-4 rounded-2xl inline-flex items-center gap-3 text-2xl text-white bg-black/20 hover:bg-black/70 shadow shadow-black/80">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <a href="#" class="mt-5 inline-block rounded-md p-2 text-2xl text-white backdrop-blur-sm bg-black/50 hover:bg-black/60 ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 float-left mr-2 after:content-[''] after:clear-both after:block">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
                 </svg>                  
                 Show your vstore pride, get high-quality <br> swag directly from the vstore foundation
             </a>
         </div>
-        <div class="flex max-md:justify-center justify-end  text-white text-2xl my-4">
-            <p class="max-md:p-2 max-md:bg-black/50 max-md:rounded-md">Transforming into stylish <br> & functional pieces</p>
+        <div class="flex max-md:justify-center  justify-end  text-white text-2xl my-4 max-md:my-6">
+            <p class="p-1 backdrop-blur-sm bg-black/5 rounded-lg">Transforming into stylish <br> & functional pieces</p>
         </div>
         <div class="text-center">
             <div class="flex items-center justify-center">
@@ -320,7 +343,7 @@
                     </svg>
                 </a>
             </div>
-                <a href="#" class="mt-4 text-white inline-block text-xl max-md:p-2 max-md:bg-black/50 max-md:rounded-md">Top collections</a>
+                <a href="#" class="mt-4 text-white inline-block text-xl p-2 backdrop-blur-sm bg-black/5 rounded-lg max-md:bg-white/20">Top collections</a>
             </div>
             <div class="absolute top-4 right-5 flex items-center gap-1">
                 <button type="button" class="inline-block bg-white rounded-full p-2 text-center opacity-70 hover:opacity-100 shadow-sm shadow-black/25">
@@ -489,7 +512,7 @@
     </section>
 
     <!-- Section NEW ARRIVALS-->
-    <section class="py-[50px] px-4">
+    <section class="py-[50px] px-3">
         <header>
             <div class="md:flex md:justify-between md:items-center">
                 <p class="text-xl text-gray-800">Catalogs</p>
@@ -671,7 +694,7 @@
     </section>
 
     <!-- Newsletters -->
-    <section class="py-[100px] px-4 max-md:py-[50px]">
+    <section class="py-[100px] px-3 max-md:py-[50px]">
         <h2 class="text-4xl text-center mb-6 font-bold">Stay in touch</h2>
         <form action="" class="text-center max-w-[700px] w-auto m-auto">
             <label for="email" class="block relative">
